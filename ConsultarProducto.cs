@@ -63,8 +63,8 @@ namespace Examen04ADONET
             }
             catch (Exception ex)
             {
-                throw ex;
-                //MessageBox.Show("Error, comunicarse con el Administrador");
+                //throw ex;
+                MessageBox.Show("Error, comunicarse con el Administrador");
             }
             finally
             {

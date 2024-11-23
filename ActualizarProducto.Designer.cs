@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.grbProducto.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // 
             this.txtIdProducto.Location = new System.Drawing.Point(114, 22);
             this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtIdProducto.Size = new System.Drawing.Size(56, 20);
             this.txtIdProducto.TabIndex = 2;
             // 
             // grbProducto
@@ -130,16 +131,28 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Nombre";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(176, 20);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // ActualizarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(278, 284);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.grbProducto);
             this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnActualizar);
             this.Name = "ActualizarProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ActualizarProducto";
             this.grbProducto.ResumeLayout(false);
             this.grbProducto.PerformLayout();
@@ -160,5 +173,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

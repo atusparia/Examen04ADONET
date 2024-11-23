@@ -68,6 +68,7 @@
             this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.label1);
             this.Name = "EliminarProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarProducto";
             this.ResumeLayout(false);
             this.PerformLayout();
